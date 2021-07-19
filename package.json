@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-e",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/node": "^8.10.66"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^4.24.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.5",
+    "express": "^4.15.4",
+    "nodemon": "^2.0.7",
+    "reflect-metadata": "^0.1.10",
+    "socket.io": "^4.1.3",
+    "typescript": "^4.3.2"
+  },
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "makemigrations": "ts-node ./node_modules/typeorm/cli.js migration:generate -n Test",
+    "migrate": "ts-node ./node_modules/typeorm/cli.js migration:run"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
