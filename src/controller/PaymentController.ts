@@ -26,7 +26,7 @@ export class PaymentController {
         let partyA = formatPhoneNumber(response, request.body.phone);
         let partyB = process.env.short_code;
 
-        let callBackUrl = "https://1e1396fc9754.ngrok.io/mpesa/hook";
+        let callBackUrl = "https://dreamvill.herokuapp.com/mpesa/hook";
         let accountReference = "test";
         let transactionDesc = "test";
 
