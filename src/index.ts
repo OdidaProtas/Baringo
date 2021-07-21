@@ -39,7 +39,6 @@ Routes.forEach(route => {
 
 app.post("/mpesa/hook", (request: Request, response: Response) => {
     const {Body: {stkCallback: {CheckoutRequestID}}} = request.body;
-    console.log(request.body);
     io.emit("mpesa-hook", request.body)
     let message = {
         "ResponseCode": "00000000",

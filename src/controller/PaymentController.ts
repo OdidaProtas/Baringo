@@ -56,7 +56,6 @@ export class PaymentController {
 
         try {
             await axios.post(darajaSandBoxUrl, data, config).then(res => {
-                console.log(res.data.CheckoutRequestID);
                 return response.send({
                     success: true,
                     message: res.data
