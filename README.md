@@ -1,7 +1,5 @@
 # Daraja API Demo with Node.js
 
-``` npm install```
-
 `POST /mpesa/request` 
 
 ```
@@ -10,3 +8,7 @@
 "phone:"07XXXXXXXX"
 }
 ```
+
+### web-hook
+
+`POST /mpesa/hook`
